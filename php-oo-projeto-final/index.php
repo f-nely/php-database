@@ -1,6 +1,6 @@
 <?php
 
-require_once "autoload/autoload.php";
+require_once 'vendor/autoload.php';
 
 use App\Repositorio\Curso;
 use App\Uteis\Conexao;
