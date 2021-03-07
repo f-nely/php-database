@@ -12,6 +12,18 @@ class Curso
 
     private bool $status;
 
+    public static function fromArray(array $dados)
+    {
+        $curso = new Curso();
+
+        $curso->nome = $dados['nome'];
+        $curso->versaoFerramenta = $dados['versao_ferramenta'];
+        $curso->cargaHoraria = $dados['carga_horaria'];
+        $curso->status = $dados['status'];
+
+        return $curso;
+    }
+
     public function setNome(string $nome): void
     {
         $this->nome = $nome;
